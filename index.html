@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<style>
+	.body {
+		padding-top: 500px;	
+	}
+	#backgroundbod {
+		background-color: #08133a;
+		text-align: center;
+    }
+	.card {
+		width: 50%;
+		height: 50%;
+		margin: 0 auto;
+        float: none;
+		margin-top: 135px;
+	}
+	#Workout {
+		background-color: #08133a;
+		border: none;
+		box-shadow: none;
+		margin-left: auto;
+		margin-right: auto;
+		float: left;
+		padding: 10px;
+    }
+	#p1, #h1 {
+		color: #08133a;
+		padding-top: 25px;	
+	}
+	#workout{
+		position: absolute;
+		right:    0;
+		bottom:   0;
+		margin-right: 50px;
+		margin-bottom: 15px;
+	}
+	</style>
+	
+	<html>
+		<head>
+			<base href="JeremyCoyBarnes.com">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+			<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+		</head>
+		
+		<body id="backgroundbod">
+			<div id="app">
+				<div class="card" height="1000">
+					<h1 id="h1">{{title}}</h1>
+					<p id="p1" style="font-size: large">{{desc}}</p>
+					<div id="workout">
+						<a target="_blank" rel="noopener" href="https://d.docs.live.net/7f5b7c8bdec13ab3/Jeremy%20Barnes/Workouts/Workout_2021.docx" download>
+							<button id="Workout" class="btn btn-primary">{{Workout}}</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
+	
+	<script>
+		var vm = new Vue({
+			el: '#app',
+			data:{
+				title: 'Jeremy Barnes Workout',
+				desc: 'Hello there. This is my workout routine! ^^',
+				Workout: 'Workout'
+			},
+			methods: {
+				name: function() { 
+				
+				}
+			}
+		});
+	
+	</script>
