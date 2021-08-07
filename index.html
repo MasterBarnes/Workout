@@ -18,8 +18,7 @@
 		background-color: #08133a;
 		border: none;
 		box-shadow: none;
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 10px;
 		float: left;
 		padding: 15px;
     }
@@ -33,6 +32,8 @@
 		bottom:   0;
 		margin-right: 50;
 		margin-bottom: 15;
+		padding: 15px;
+	    padding-right: 25px;
 	}
 	</style>
 	
@@ -51,6 +52,9 @@
 					<p id="p1" style="font-size: large">{{desc}}</p>
 					<div id="workout1">
 						<a target="_blank" rel="noopener" href="Workout_2021.doc" download>
+							<button id="Workout2" class="btn btn-primary">{{Workout1}}</button>
+						</a>
+						<a target="_blank" rel="noopener" href="Workout_2021.pdf" download>
 							<button id="Workout2" class="btn btn-primary">{{Workout2}}</button>
 						</a>
 					</div>
@@ -65,7 +69,8 @@
 			data:{
 				title: 'Jeremy Barnes Workout',
 				desc: 'What\'s up noobs?! ^^',
-				Workout2: 'Workout'
+				Workout1: 'Word: Workout',
+				Workout2: 'PDF: Workout'
 			},
 			methods: {
 				name: function() { 
